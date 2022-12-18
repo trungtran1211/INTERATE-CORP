@@ -1,0 +1,1697 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+
+
+.container {
+	max-width: 1216px;
+	margin: 0 auto;
+}
+.scroll {
+	position: fixed;
+	top: 815px;
+	right: 86px;
+	z-index: 999;
+	cursor: pointer;
+	opacity: 0;
+}
+.scroll:hover {
+	animation: scroll 0.3s linear infinite;
+	transition: 0.2s linear;
+}
+@keyframes scroll {
+	to {
+		transform: scale(1.05);
+	}
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	background: #ffffff;
+}
+.header-container {
+	max-width: 100%;
+	padding: 5px 0px;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+}
+.list-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 28px;
+}
+.list-menu li a {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #1763e1;
+}
+.list-menu li a:hover{
+	color: #ee1d23;
+	transition: .1s linear;
+	border-bottom: 2px solid #ee1d23;
+}
+.search-lang {
+	display: flex;
+	gap: 8px;
+	margin-left: 66px;
+}
+.lang {
+	border: none;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 19px;
+
+	color: #1763e1;
+}
+/* ================Banner========================= */
+.banner {
+	margin-top: 90px;
+	position: relative;
+}
+
+.banner-list .slick-dots {
+	position: absolute;
+	top: 45%;
+	right: 196px;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	gap: 6px;
+	transition: 0.5s linear;
+}
+.banner-list .slick-dots button {
+	font-size: 0;
+	background: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ffffff;
+	outline: none;
+	border-radius: 9.90305px;
+	cursor: pointer;
+	transition: 0.5s linear;
+}
+.banner-list .slick-dots .slick-active button {
+	background: #ffffff;
+	position: relative;
+	margin-top: 90px;
+}
+.banner-list .slick-dots .slick-active button::after {
+	content: "";
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 3px;
+	height: 63px;
+	background: #ffffff;
+	border-radius: 15px;
+	transition: 0.5s linear;
+}
+.number {
+	position: absolute;
+	top: 41.5%;
+	right: 193px;
+}
+.number span {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26.25px;
+	line-height: 36px;
+
+	color: #ffffff;
+}
+
+.banner-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.banner-content h2 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 37.5px;
+	line-height: 51px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	margin-bottom: 3px;
+}
+.banner-content h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 41.25px;
+	line-height: 60px;
+	letter-spacing: 0.035em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	margin-bottom: 21px;
+	position: relative;
+}
+.banner-btn {
+	padding: 7.5px 8px 7.5px 13px;
+	border: 1.5px solid #ffffff;
+	border-radius: 21px;
+	background: transparent;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18.75px;
+	line-height: 23px;
+	text-align: center;
+
+	/* Style màu/Trắng */
+
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.3s linear;
+}
+.banner-btn:hover {
+	transform: scale(1.1);
+}
+.banner-btn img {
+	margin-left: 8px;
+}
+/* about */
+
+/* làm lại about */
+
+.about-item:first-child{
+	text-align: center;
+	padding: 28px 42px 28px;
+	background: #FFFFFF;
+	box-shadow: 0px 4.00278px 32.0222px rgba(0, 0, 0, 0.11);
+	border-radius: 16.9245px;
+  }
+  .about-item:first-child h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14.0097px;
+	line-height: 17px;
+	text-align: center;
+  
+	color: #1763E1;
+	padding: 8px 0 14px;
+  }
+  .about-item:nth-child(2){
+	background: #1763E1;
+	border-radius: 17.7242px;
+	text-align: center;
+	padding: 24px 14px;
+  }
+  .about-item:nth-child(2) h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14.6717px;
+	line-height: 17px;
+	text-align: center;
+  
+	color: #FFFFFF;
+	padding: 6px 0;
+  }
+  .about-item:last-child{
+	padding: 29px 18px;
+	background: #FFFFFF;
+	box-shadow: 0px 4.00278px 32.0222px rgba(0, 0, 0, 0.11);
+	border-radius: 16.9245px;
+	text-align: center;
+  }
+  .about-item:last-child h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14.0097px;
+	line-height: 17px;
+	text-align: center;
+  
+	color: #1763E1;
+	padding: 8px 0;
+  }
+  
+.about-container {
+	display: flex;
+	gap: 263px;
+}
+.about-left {
+	width: 556px;
+	padding-top: 101px;
+}
+.about-left span {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35.0243px;
+	line-height: 48px;
+
+	color: #ec1d25;
+	margin-bottom: 28px;
+	position: relative;
+}
+.about-left span::after {
+	content: url("../images/arrow-hd.png");
+	position: absolute;
+	top: -18px;
+}
+.about-left p {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23.016px;
+	line-height: 28px;
+	/* or 122% */
+
+	text-align: justify;
+	color: #305eab;
+	margin-bottom: 28px;
+	position: relative;
+}
+.about-left p::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -30px;
+	width: 2px;
+	height: 233px;
+	background: rgba(23, 99, 225, 0.5);
+}
+.about-btn {
+	background: #ffffff;
+	border: 1.00069px solid #1763e1;
+	box-shadow: 0px 4.00278px 4.00278px rgba(23, 99, 225, 0.28);
+	border-radius: 20.0139px;
+	display: flex;
+	align-items: center;
+	padding: 8px 18px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+	color: #1763e1;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s linear;
+}
+.about-btn:hover {
+	background: #1763e1;
+	color: #ffffff;
+}
+.about-btn:hover::after {
+	content: url("../images/arrow-btn.png");
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+.about-right {
+	position: relative;
+	width: 397px;
+}
+.about-item:first-child {
+	position: absolute;
+	top: 32px;
+	right: 0;
+}
+.about-item:nth-child(2) {
+	position: absolute;
+	top: 203px;
+}
+.about-item:last-child {
+	position: absolute;
+	top: 425px;
+	left: 165px;
+  }
+
+/* Sứ Mệnh */
+.mission-container {
+	margin-top: 107px;
+	display: flex;
+	gap: 102px;
+}
+.mission-right {
+	width: 561px;
+	padding: 75px 0 0 12px;
+}
+.mission-right h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 40px;
+
+	color: #ec1d25;
+	margin-bottom: 28px;
+}
+.mission-right p {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 28px;
+	text-align: justify;
+
+	color: #305eab;
+	position: relative;
+}
+.mission-right p::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -30px;
+	width: 2px;
+	height: 116px;
+	background: #1763e1;
+	opacity: 0.5;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+/* Tầm nhìn */
+.vision-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 127px;
+}
+.vision-left {
+	width: 580px;
+}
+.vision-left h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 40px;
+
+	color: #ec1d25;
+	margin-bottom: 28px;
+}
+.vision-left p {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 28px;
+
+	color: #305eab;
+	position: relative;
+}
+.vision-left p::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -30px;
+	width: 2px;
+	height: 65px;
+	background: #1763e1;
+	opacity: 0.5;
+}
+/* Cột mốc đáng nhớ */
+.milestones {
+	margin-top: 78px;
+	position: relative;
+}
+.milestones::after {
+	content: url("../images/milestones-goc.png");
+	position: absolute;
+	top: -40px;
+	right: 0;
+}
+.milestones-container h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+
+	color: #1763e1;
+	position: relative;
+}
+.milestones-container h1::after {
+	content: url("../images/arrow-hd.png");
+	position: absolute;
+	top: -25px;
+}
+.milestones-list {
+	display: flex;
+	gap: 70px;
+}
+.milestones-item {
+	padding: 25px 28px 43px;
+	text-align: center;
+	background: #ffffff;
+	border-bottom: 2.97569px solid #1763e1;
+	border-radius: 39.6759px;
+	filter: drop-shadow(0px 0px 14.7332px rgba(61, 144, 227, 0.38));
+}
+.milestones-item h3 {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24.0252px;
+	line-height: 26px;
+
+	color: #1763e1;
+	margin-bottom: 34px;
+	position: relative;
+}
+.milestones-item h3::after {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	right: 50%;
+	transform: translateX(50%);
+	width: 51.8px;
+	height: 1.2px;
+	background: #ee1d23;
+	border-radius: 17.1609px;
+}
+
+.milestones-item p {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16.735px;
+	line-height: 20px;
+
+	color: #737373;
+}
+.milestones .slick-initialized .slick-slide {
+	margin: 0 35px;
+}
+.milestones .draggable {
+	padding: 34px 0 52px;
+}
+
+.milestones-item .slick-active:nth-child(2) {
+	transform: scale(1.5);
+}
+.milestones-list .slick-dots {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	gap: 6px;
+}
+.milestones-list .slick-dots button {
+	font-size: 0;
+	background: #e9f1ff;
+	width: 8.47px;
+	height: 8.47px;
+	border: none;
+	outline: none;
+	border-radius: 9.90305px;
+	cursor: pointer;
+}
+.milestones-list .slick-dots .slick-active button {
+	background: #1763e1;
+	border-radius: 9.90305px;
+	width: 16.95px;
+	height: 8.47px;
+}
+/* Công ty thành viên */
+
+.member {
+	margin-top: 69px;
+}
+.member h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	/* identical to box height, or 150% */
+
+	color: #1763e1;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+.member h1::after {
+	content: url("../images/arrow-hd.png");
+	position: absolute;
+	top: -22px;
+}
+
+/* Tin tức vào sự kiện */
+.newevent {
+	position: relative;
+}
+.newevent::after {
+	content: url("../images/newevent-goc.png");
+	position: absolute;
+	top: -25px;
+	left: 0;
+}
+/* .newevent-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
+
+.newevent-container h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	color: #1763e1;
+	text-align: center;
+	margin-bottom: 33px;
+	position: relative;
+}
+.newevent-container h1::after {
+	content: url("../images/arrow-hd.png");
+	position: absolute;
+	top: -22px;
+}
+.newevent-list {
+	display: flex;
+	gap: 0 31px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 49px;
+}
+.newevent-img {
+	margin-bottom: 16px;
+}
+.newevent-item {
+	padding: 17px;
+	width: 384px;
+}
+.newevent-item:hover {
+	box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.11);
+	border-radius: 19.1526px;
+	cursor: pointer;
+	transition: 0.3s linear;
+}
+.newevent-item h2 {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+
+	color: #ec1d25;
+	margin-bottom: 7px;
+}
+.newevent-item p {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 28px;
+	color: #282828;
+	margin-bottom: 15px;
+}
+.newevent-item span {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #a2a2a2;
+}
+.newevent-img {
+	margin-bottom: 16px;
+	text-align: center;
+}
+.newevent-btn {
+	padding: 8px 18px;
+	background: #ffffff;
+	border: 1px solid #1763e1;
+	box-shadow: 0px 4px 4px rgba(23, 99, 225, 0.28);
+	border-radius: 20px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+
+	color: #1763e1;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	transition: 0.5s linear;
+	position: relative;
+	cursor: pointer;
+}
+.newevent-btn:hover {
+	background: #1763e1;
+	color: #ffffff;
+}
+.newevent-btn:hover::after {
+	content: url("../images/arrow-btn.png");
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+.newevent-btn img {
+	margin-left: 4px;
+}
+
+/* Footer */
+footer {
+	margin-top: 45px;
+	border-top: 0.500347px solid #a2a2a2;
+	position: relative;
+}
+footer::after {
+	content: url("../images/footer-goc.png");
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.footer-container {
+	padding: 38px 0 61px;
+}
+.logo-ft {
+	margin-bottom: 38px;
+}
+
+.footer-col {
+	display: flex;
+	gap: 178px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.footeritem:first-child {
+	width: 309px;
+}
+.footeritem:nth-child(2) {
+	width: 331px;
+}
+.footeritem:last-child {
+	width: 192px;
+}
+
+.footeritem h1 {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+
+	color: #282828;
+	margin-bottom: 41px;
+	position: relative;
+}
+.footeritem h1::after {
+	content: "";
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	width: 40.53px;
+	height: 3px;
+	background: #282828;
+	border-radius: 20px;
+}
+.footeritem p {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16.5115px;
+	line-height: 125.02%;
+	text-align: justify;
+
+	color: #737373;
+}
+.address,
+.email {
+	display: flex;
+	align-items: center;
+	gap: 21px;
+	margin-bottom: 18px;
+}
+.phone {
+	display: flex;
+	align-items: center;
+	gap: 21px;
+}
+.phone span {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #737373;
+}
+.address span {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+
+	color: #737373;
+}
+.email span {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+
+	/* Xám tối */
+
+	color: #737373;
+}
+.copyright {
+	padding: 13px 0 14px;
+	background: #1763e1;
+	text-align: center;
+}
+.copyright span {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: #e9f1ff;
+}
+
+.mb {
+	display: none;
+}
+
+/* member-list */
+.member-list div {
+	transition: all 0.5s ease;
+}
+.member-list {
+	display: flex;
+	max-width: 1441px;
+	margin: 50px auto;
+}
+.member-item {
+	position: relative;
+	width: 25%;
+	height: 648px;
+	background-size: 100%;
+}
+
+.member-item:nth-child(1) {
+	background: url(../images/member/11.png) no-repeat center center;
+	background-size: cover;
+}
+.member-item:nth-child(2) {
+	background: url(../images/member/22.png) no-repeat center center;
+	background-size: cover;
+}
+.member-item:nth-child(3) {
+	background: url(../images/member/33.png) no-repeat center center;
+	background-size: cover;
+}
+.member-item:nth-child(4) {
+	background: url(../images/member/44.png) no-repeat center center;
+	background-size: cover;
+}
+
+.member-item:hover:nth-child(1) {
+	background: url(../images/member/1.png) no-repeat center center;
+}
+.member-item:hover:nth-child(2) {
+	background: url(../images/member/2.png) no-repeat center center;
+}
+.member-item:hover:nth-child(3) {
+	background: url(../images/member/3.png) no-repeat center center;
+}
+.member-item:hover:nth-child(4) {
+	background: url(../images/member/4.png) no-repeat center center;
+}
+
+/* //////////////////////// */
+.member-item:hover .member-item-content {
+	position: absolute;
+	top: 0;
+	width: 25%;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.28);
+	width: 25%;
+	height: 100%;
+}
+.member-item:hover .member-item-content::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+
+	width: 123px;
+	height: 123px;
+}
+
+.member-item:hover .member-item-content::before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 100%;
+	height: auto;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 28px;
+	text-align: justify;
+
+	color: #ffffff;
+
+	animation: showEffect 1.5s ease-out;
+}
+@keyframes showEffect {
+	from {
+		opacity: 0;
+	}
+	tp {
+		opacity: 1;
+	}
+}
+/* //////////////////////// */
+
+.member-item:nth-child(1):hover .member-item-content {
+	left: 0%;
+}
+.member-item:nth-child(1):hover .member-item-content::after {
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background: url(../images/member/icons/Logo\ dynu.png) no-repeat center
+		center;
+}
+.member-item:nth-child(1):hover .member-item-content::before {
+	content: "DYNU - Là một mạng lưới tiếp thị liên kết quy mô toàn cầu, Dynu In Media chuyên cung cấp và phân phối ưu đãi từ các đơn vị quảng cáo hàng đầu.";
+	left: calc(100% + 22px);
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 28px;
+	/* or 122% */
+
+	text-align: justify;
+
+	color: #FFFFFF;
+}
+/* //////////////////////// */
+.member-item:nth-child(2):hover .member-item-content {
+	left: 25%;
+}
+.member-item:nth-child(2):hover .member-item-content::after {
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background: url(../images/member/icons/Logo\ dynu.png) no-repeat center
+		center;
+}
+.member-item:nth-child(2):hover .member-item-content::before {
+	content: "DT Studio - Là đơn vị chuyên sản xuất phim hoạt hình khai thác trên đa nền tảng";
+
+	left: calc(100% + 22px);
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 28px;
+	/* or 122% */
+
+	text-align: justify;
+
+	color: #FFFFFF;
+	
+}
+/* //////////////////////// */
+.member-item:nth-child(3):hover .member-item-content {
+	left: 50%;
+}
+.member-item:nth-child(3):hover .member-item-content::after {
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background: url(../images/member/icons/Logo\ dynu.png) no-repeat center
+		center;
+}
+.member-item:nth-child(3):hover .member-item-content::before {
+	left: calc(100% + 22px);
+}
+/* //////////////////////// */
+.member-item:nth-child(4):hover .member-item-content {
+	left: 75%;
+}
+.member-item:nth-child(4):hover .member-item-content::after {
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background: url(../images/member/icons/Logo\ dynu.png) no-repeat center
+		center;
+}
+.member-item:nth-child(4):hover .member-item-content::before {
+	content: "Mây Network - Là một MCN TikTok, Mây Network chuyên kết nối, hỗ trợ, quản lý và đào tạo các Nhà sáng tạo/ Doanh nghiệp trên nền tảng Tiktok.";
+
+	left: calc(-100% - 43px);
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 28px;
+	/* or 122% */
+
+	text-align: justify;
+
+	color: #FFFFFF;
+}
+/* //////////////////////// */
+
+.w-100 {
+	width: 100%;
+}
+.w-0 {
+	width: 0;
+}
+/* member-list */
+
+@media screen and (max-width: 1024px) {
+	.pc {
+		display: none;
+	}
+	.mb {
+		display: block;
+	}
+
+	.header-container-mb {
+		padding: 22px 111px 16px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.logomb {
+		padding-left: 50px;
+	}
+	.search-langmb {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
+	.search-mb {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		padding: 8px 14px 8px 17px;
+		background: #ffffff;
+		/* Gray/200 */
+
+		border: 1px solid #d5dae1;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+		border-radius: 8px;
+		max-height: 36px;
+		max-width: 220px;
+	}
+	.search-mb input {
+		border: none;
+		width: 100%;
+		outline: none;
+	}
+	.list-menumb {
+		position: fixed;
+		width: 100%;
+		text-align: center;
+		background: #ffffff;
+		transform: translateY(-200%);
+		transition: 0.5s linear;
+	}
+	.list-menumb li {
+		padding-bottom: 14px;
+		padding-top: 14px;
+		border-bottom: 1px solid #a2a2a2;
+	}
+	.list-menumb li a {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: center;
+
+		color: #1763e1;
+	}
+	.open {
+		transform: translateY(0%);
+		transition: 0.5s ease;
+	}
+	.iconclose {
+		display: none;
+	}
+	.active {
+		display: block;
+	}
+	.close {
+		display: none;
+		transition: 0.5s linear;
+	}
+
+	.list-menu {
+		display: none;
+	}
+	.banner-content {
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		width: 600px;
+	}
+	.banner-list .slick-dots {
+		position: absolute;
+		top: 90%;
+		right: 51%;
+		transform: translateX(50%);
+		display: flex;
+		flex-direction: row;
+		bottom: 0;
+		gap: 6px;
+	}
+	.banner-list .slick-dots .slick-active button {
+		background: #ffffff;
+		position: relative;
+		margin-top: 0px;
+		margin-right: 40px;
+		width: 12px;
+		height: 12px;
+	}
+	.banner-list .slick-dots .slick-active button::after {
+		content: "";
+		position: absolute;
+		bottom: 2px;
+		right: 40%;
+		transform: translateX(50%);
+		height: 2px;
+		width: 28px;
+		background: #ffffff;
+		border-radius: 15px;
+	}
+	.banner-list .slick-dots button {
+		font-size: 0;
+		background: none;
+		width: 10px;
+		height: 10px;
+		border: 2px solid #ffffff;
+		outline: none;
+		border-radius: 9.90305px;
+		cursor: pointer;
+	}
+	.number {
+		position: absolute;
+		top: 90%;
+		right: 44%;
+		transform: translateX(50%);
+	}
+	.number span {
+		font-size: 18.25px;
+		line-height: 33px;
+	}
+	.banner-content h2 {
+		font-size: 23px;
+		line-height: 30px;
+		margin-bottom: 0;
+	}
+	.banner-content h1 {
+		font-size: 24.25px;
+		line-height: 57px;
+		margin-bottom: 10px;
+	}
+	.banner-btn {
+		padding: 5.5px 8px 5.5px 13px;
+		font-size: 14.75px;
+		line-height: 25px;
+	}
+	/* /============================== */
+	.about-container {
+		display: flex;
+		gap: 35px;
+		flex-direction: column;
+	}
+	.about-left {
+		width: 100%;
+		margin-top: 13px;
+		padding: 0 35px 0 53px;
+	}
+	.about-right {
+		width: 100%;
+		text-align: center;
+	}
+	/* làm lại about */
+	.aboutitem:first-child{
+		width: 100%;
+		text-align: center;
+		background: #1763E1;
+		border-radius: 14.3522px;
+		padding: 19px 0;
+	}
+	.aboutitem:first-child h1 {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20.8805px;
+		line-height: 25px;
+		text-align: center;
+	
+		color: #FFFFFF;
+		margin-top: 6px;
+	}
+	.aboutitem:nth-child(2){
+		padding: 22px;
+		background: #FFFFFF;
+		border-radius: 13.7047px;
+	}
+	.aboutitem:nth-child(2) h1 {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20.8805px;
+		line-height: 25px;
+		text-align: center;
+	
+		color: #1763E1;
+		margin-top: 6px;
+	}
+	.aboutitem:last-child {
+		padding: 22px;
+		background: #FFFFFF;
+		border-radius: 13.7047px;
+	}
+	.aboutitem:last-child h1 {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20.8805px;
+		line-height: 25px;
+		text-align: center;
+	
+		color: #1763E1;
+		margin-top: 6px;
+	}
+	/* ================================== */
+	.mission-container {
+		margin-top: 29px;
+		display: flex;
+		flex-direction: column;
+		gap: 13px 51px;
+	}
+	.mission-left {
+		width: 100%;
+		text-align: center;
+	}
+	.mission-right {
+		width: 100%;
+		padding: 0 36px 0 66px;
+	}
+	.mission-right h1 {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 40px;
+		color: #ec1d25;
+		margin-bottom: 8px;
+	}
+	/* ------------------------------- */
+	.vision-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+		gap: 18px 127px;
+		margin-top: 20px;
+	}
+	/* -------------- */
+	.newevent-list {
+		margin-bottom: 19px;
+	}
+	.scroll {
+		position: fixed;
+		top: 620px;
+		max-width: 90px;
+		right: 0px;
+		z-index: 999;
+		cursor: pointer;
+		opacity: 0;
+	  }
+	/* ---------------------------- */
+	.footer-container {
+		padding: 15px 0 25px;
+	}
+	.logo-ft {
+		margin-bottom: 20px;
+	}
+	.contact-ft h1 {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 18px;
+		display: flex;
+		align-items: center;
+
+		color: #282828;
+		margin-bottom: 17px;
+	}
+}
+/* /////////// */
+@media screen and (max-width: 960px) {
+	.member-list {
+		flex-wrap: wrap;
+	}
+	.member-item {
+		width: 50%;
+	}
+}
+/* /////////// */
+@media screen and (max-width: 600px) {
+
+	#about{
+		position: absolute;
+		top: 254px;
+	}
+
+
+	.member-list {
+		flex-wrap: wrap;
+	}
+	.member-item {
+		width: 100%;
+	}
+	/* .header-container {
+		max-width: 100%;
+		padding: 5px 0px;
+		background: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		z-index: 999;
+	}
+	.logo img {
+		max-width: 220px;
+	} */
+	.header-container-mb {
+		padding: 16px 25px 16px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.search-mb input {
+		display: none;
+	}
+	.search-langmb {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+	.search-mb {
+		padding: 0;
+		border: none;
+	}
+	.logomb {
+		padding: 0;
+	}
+	.logomb img {
+		max-width: 160px;
+	}
+	.banner {
+		margin-top: 74px;
+		position: relative;
+	}
+	.member-list {
+		margin: 30px auto;
+	}
+	.banner-content {
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.banner-content h1 {
+		font-size: 13.25px;
+		line-height: 25px;
+		margin-bottom: 6px;
+	}
+	.banner-content h2 {
+		font-size: 10.5px;
+		line-height: 16px;
+		margin-bottom: 0;
+	}
+	.banner-btn {
+		padding: 4.5px 8px 4.5px 13px;
+		font-size: 11.75px;
+		line-height: 25px;
+	}
+	.banner-btn img {
+		max-width: 15px;
+		margin-left: 4px;
+	}
+	.banner-list .slick-dots {
+		position: absolute;
+		top: 84%;
+		right: 50%;
+		transform: translateX(50%);
+		display: flex;
+		flex-direction: row;
+		bottom: 0;
+		gap: 6px;
+	}
+	.banner-list .slick-dots button {
+		font-size: 0;
+		background: none;
+		width: 8px;
+		height: 8px;
+		border: 2px solid #ffffff;
+		outline: none;
+		border-radius: 9.90305px;
+		cursor: pointer;
+	}
+	.banner-list .slick-dots .slick-active button {
+		background: #ffffff;
+		position: relative;
+		margin-top: 0px;
+		margin-right: 35px;
+		width: 10px;
+		height: 10px;
+	}
+	.banner-list .slick-dots .slick-active button::after {
+		content: "";
+		position: absolute;
+		bottom: 2px;
+		right: 40%;
+		transform: translateX(40%);
+		height: 2px;
+		width: 28px;
+		background: #ffffff;
+		border-radius: 15px;
+	}
+	.number {
+		position: absolute;
+		top: 84%;
+		right: 38%;
+		transform: translateX(50%);
+	}
+	.number span {
+		font-size: 12.25px;
+		line-height: 34px;
+	}
+	/* ----------------------------- */
+	.about-left span {
+		font-size: 21.0243px;
+		line-height: 42px;
+		margin-bottom: 8px;
+	}
+	.about-left p {
+		font-size: 14.016px;
+		line-height: 17px;
+		margin-bottom: 12px;
+	}
+	.about-left p::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -18px;
+		width: 2px;
+		height: 141px;
+		background: rgba(23, 99, 225, 0.5);
+	}
+	.about-btn {
+		padding: 5px 11px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.about-btn img {
+		max-width: 14px;
+		margin-left: 3px;
+	}
+	  /* làm lại about */
+	.aboutitem:first-child h1 {
+		font-size: 11px;
+		line-height: 14px;
+	}
+	.aboutitem:nth-child(2) h1 {
+		font-size: 11px;
+		line-height: 14px;
+	}
+	.aboutitem:last-child h1 {
+		font-size: 11px;
+		line-height: 14px;
+	}
+	/* end */
+	/* ---------------------- */
+	.mission-left {
+		max-width: 401px;
+		padding-left: 35px;
+	}
+	.mission-right h1 {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 21px;
+		line-height: 40px;
+		color: #ec1d25;
+		margin-bottom: 8px;
+	}
+	.mission-right p {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 28px;
+		text-align: justify;
+		color: #305eab;
+		position: relative;
+	}
+	.mission-right p::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -30px;
+		width: 2px;
+		height: 115px;
+		background: #1763e1;
+		opacity: 0.5;
+		transform: matrix(1, 0, 0, -1, 0, 0);
+	}
+	/* -------------------------------- */
+	.vision-right {
+		width: 100%;
+		text-align: center;
+	}
+	.vision-right {
+		max-width: 357px;
+	}
+	.vision-left {
+		width: 100%;
+		padding: 0 89px 0 67px;
+	}
+
+	.vision-left p {
+		font-size: 14px;
+		line-height: 28px;
+	}
+	.vision-left h1 {
+		font-size: 21px;
+		line-height: 40px;
+		margin-bottom: 7px;
+	}
+	/* ------------------------ */
+	.milestones-container h1 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.milestones-item {
+		padding: 27px 30px 46px;
+	}
+	.milestones-container h1::after {
+		content: url(../images/arrow-hdmb.png);
+		position: absolute;
+		top: -15px;
+	}
+	.milestones .draggable {
+		padding: 19px 0 40px;
+	}
+	.milestones {
+		margin-top: 33px;
+	}
+	.milestones::after {
+		content: url("../images/milestones-gocmb.png");
+		position: absolute;
+		top: -0px;
+		right: 0;
+	}
+	/* ------------------------ */
+	.member h1 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.member h1::after {
+		content: url(../images/arrow-hdmb.png);
+		position: absolute;
+		top: -13px;
+	}
+	.member {
+		margin-top: 25px;
+	}
+
+	/* ----------------------- */
+	.member-item:hover .member-item-content {
+		position: absolute;
+		top: 0;
+		width: 25%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.28);
+		width: 44%;
+		height: 100%;
+	}
+	.member-item:nth-child(1):hover .member-item-content::before {
+		content: "DYNU - Là một mạng lưới tiếp thị liên kết quy mô toàn cầu, Dynu In Media chuyên cung cấp và phân phối ưu đãi từ các đơn vị quảng cáo hàng đầu.";
+		left: calc(100% + 22px);
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 25px;
+		text-align: justify;
+		color: #FFFFFF;
+	}
+	.member-item:nth-child(2):hover .member-item-content {
+		left: 0%;
+	}
+	.member-item:nth-child(2):hover .member-item-content::before {
+		content: "DT Studio - Là đơn vị chuyên sản xuất phim hoạt hình khai thác trên đa nền tảng";
+		left: calc(100% + 22px);
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: justify;
+		color: #FFFFFF;
+	}
+	.member-item:nth-child(3):hover .member-item-content {
+		left: 0%;
+	}
+	.member-item:nth-child(4):hover .member-item-content {
+		left: 0%;
+	}
+	.member-item:nth-child(4):hover .member-item-content::before {
+		content: "Mây Network - Là một MCN TikTok, Mây Network chuyên kết nối, hỗ trợ, quản lý và đào tạo các Nhà sáng tạo/ Doanh nghiệp trên nền tảng Tiktok.";
+		left: calc(-100% - -390px);
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: justify;
+		color: #FFFFFF;
+	}
+	/* ----------------------- */
+	.newevent-container h1 {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 10px;
+	}
+	.newevent-container h1::after {
+		content: url(../images/arrow-hdmb.png);
+		position: absolute;
+		top: -13px;
+	}
+	/* ------------------------- */
+	.newevent-item p {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		color: #282828;
+		margin-bottom: 12px;
+	}
+	.newevent-item {
+		padding: 10px 17px;
+		margin: 0 20px;
+		width: 100%;
+	}
+	.newevent::after {
+		content: url(../images/newevent-goc-mb.png);
+		position: absolute;
+		top: 0px;
+		left: 0;
+	}
+	.address, .email {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 18px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.number {
+		position: absolute;
+		top: 84%;
+		right: 36%;
+		transform: translateX(50%);
+	}
+	.number span {
+		font-size: 12.25px;
+		line-height: 35px;
+	}
+	.milestones .slick-initialized .slick-slide {
+		margin: 0 15px;
+	}
+	.newevent-item {
+		padding: 10px 17px;
+		margin: 0 15px;
+		width: 100%;
+	}
+	.banner-content {
+		width: 300px;
+	}
+}
