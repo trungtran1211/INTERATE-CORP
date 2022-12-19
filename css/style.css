@@ -143,6 +143,10 @@ header {
 	position: relative;
 }
 
+.banner-img {
+	width: 100%;
+}
+
 .banner-list .slick-dots {
 	position: absolute;
 	top: 45%;
@@ -588,7 +592,7 @@ header {
 
 .slick-center { 
 	transform: scale(1.2); 
-  }
+}
 
 .milestones-item p {
 	font-family: "Inter";
@@ -1148,19 +1152,19 @@ footer::after {
 	.mb {
 		display: block;
 	}
+	.milestones-item {
+		min-height: 256px;
+	}
 
 	.header-container-mb {
-		padding: 22px 111px 16px;
+		padding: 22px 25px 16px;
 		display: flex;
 		justify-content: space-between;
-	}
-	.logomb {
-		padding-left: 50px;
 	}
 	.search-langmb {
 		display: flex;
 		align-items: center;
-		gap: 24px;
+		gap: 8px;
 	}
 	.search-mb {
 		display: flex;
@@ -1174,7 +1178,7 @@ footer::after {
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 		border-radius: 8px;
 		max-height: 36px;
-		max-width: 220px;
+		width: 100%;
 	}
 	.search-mb input {
 		border: none;
@@ -1184,10 +1188,11 @@ footer::after {
 	.list-menumb {
 		position: fixed;
 		width: 100%;
-		text-align: center;
+		text-align: left;
 		background: #ffffff;
 		transform: translateY(-200%);
 		transition: 0.5s linear;
+		padding: 0 25px;
 	}
 	.list-menumb li {
 		padding-bottom: 14px;
@@ -1403,6 +1408,13 @@ footer::after {
 	.newevent-list {
 		margin-bottom: 19px;
 	}
+	.newevent-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+	}
 	.scroll {
 		position: fixed;
 		top: 620px;
@@ -1487,18 +1499,6 @@ footer::after {
 		display: flex;
 		justify-content: space-between;
 	}
-	.search-mb input {
-		display: none;
-	}
-	.search-langmb {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-	}
-	.search-mb {
-		padding: 0;
-		border: none;
-	}
 	.logomb {
 		padding: 0;
 	}
@@ -1510,7 +1510,10 @@ footer::after {
 		position: relative;
 	}
 	.member-list {
-		margin: 30px auto;
+		margin: 8px auto 20px;
+	}
+	.member-item {
+		margin-bottom: 3px;
 	}
 	.banner-content {
 		left: 50%;
@@ -1522,12 +1525,12 @@ footer::after {
 		text-align: center;
 	}
 	.banner-content h1 {
-		font-size: 17px;
+		font-size: 16px;
 		line-height: 25px;
 		margin-bottom: 6px;
 	}
 	.banner-content h2 {
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 16px;
 		margin-bottom: 0;
 	}
@@ -1703,6 +1706,10 @@ footer::after {
 		font-size: 18px;
 		line-height: 28px;
 	}
+	.slick-center { 
+		transform: scale(1); 
+	}
+	
 	.milestones-item {
 		padding: 27px 30px 46px;
 	}
@@ -1803,6 +1810,22 @@ footer::after {
 		line-height: 24px;
 	}
 	/* ------------------------- */
+	.newevent-container h1 {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		color: #1763e1;
+		text-align: center;
+		margin-bottom: 9px;
+		position: relative;
+	}
+	.newevent-container h1::after {
+		content: url(../images/arrow-hdmb.png);
+		position: absolute;
+		top: -13px;
+	}
 	.newevent-item p {
 		font-family: "Inter";
 		font-style: normal;
@@ -1816,6 +1839,9 @@ footer::after {
 		padding: 10px 17px;
 		margin: 0 20px;
 		width: 100%;
+	}
+	.newevent-img img {
+		margin:  0 auto;
 	}
 	.newevent::after {
 		content: url(../images/newevent-goc-mb.png);
@@ -1886,6 +1912,13 @@ footer::after {
 		bottom: 55px;
 		right: -5px;
 	}
+	.milestones .slick-initialized .slick-slide {
+		margin: 19px 75px 16px;
+	}
+	.milestones-item {
+		min-height: 213px;
+	}
+
 }
 
 @media screen and (max-width: 400px) {
@@ -1899,9 +1932,7 @@ footer::after {
 		font-size: 12.25px;
 		line-height: 35px;
 	}
-	.milestones .slick-initialized .slick-slide {
-		margin: 0 15px;
-	}
+	
 	.newevent-item {
 		padding: 10px 17px;
 		margin: 0 15px;

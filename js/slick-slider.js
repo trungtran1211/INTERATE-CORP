@@ -27,7 +27,7 @@ $(".banner-list").slick({
 	autoplaySpeed: 1200,
 	fade: true,
 	cssEase: "linear",
-	autoplay: true,
+	autoplay: false,
 });
 
 const mediaQuery = window.matchMedia('(max-width: 600px)')
@@ -115,7 +115,7 @@ window.onscroll = () =>
 		: (topBtn.style.opacity = 0);
 
 $("a[href='#top']").click(function () {
-	$("html, body").animate({ scrollTop: 0 }, "slow");
+	$("html, body").animate({ scrollTop: 0 });
 	return false;
 });
 
