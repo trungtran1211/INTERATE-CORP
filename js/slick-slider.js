@@ -21,6 +21,7 @@ $(".banner-list").slick({
 	infinite: true,
 	arrows: false,
 	speed: 500,
+	autoplaySpeed: 800,
 	fade: true,
 	cssEase: "linear",
 	autoplay: true,
@@ -102,5 +103,5 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 	$('html, body').animate({
 		scrollTop: $($.attr(this, 'href')).offset().top - 150
-	}, 1000);
+	});
 });
