@@ -80,30 +80,30 @@ header {
 }
 .search-lang {
 	display: flex;
-	gap: 8px;
-	margin-left: 66px;
+	margin-left: 44px;
 }
 .lang {
 	border: none;
+	outline: none;
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 19px;
-
 	color: #1763e1;
 }
 
-.search-langmb {
+.search {
 	display: flex;
 	align-items: center;
 	gap: 24px;
+	
 }
-.search-mb {
+.search {
 	display: flex;
 	align-items: center;
 	gap: 4px;
-	padding: 8px 14px 8px 17px;
+	padding: 4px 8px;
 	background: #ffffff;
 	/* Gray/200 */
 
@@ -111,36 +111,32 @@ header {
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 	border-radius: 8px;
 	max-height: 36px;
-	max-width: 220px;
+	max-width: 174px;
+	border: none;
 }
-.search-mb input {
+.hide {
 	border: none;
 	width: 100%;
 	outline: none;
+	display: none;
 }
-.list-menumb {
-	position: fixed;
-	width: 100%;
-	text-align: center;
-	background: #ffffff;
-	transform: translateY(-200%);
-	transition: 0.5s linear;
+.show{
+	display: block;
 }
-.list-menumb li {
-	padding-bottom: 14px;
-	padding-top: 14px;
-	border-bottom: 1px solid #a2a2a2;
+.search-bd{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+	border-radius: 10px;
 }
-.list-menumb li a {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 26px;
-	text-align: center;
+.search button {
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+}
 
-	color: #1763e1;
-}
+  
+
 /* ================Banner========================= */
 .banner {
 	margin-top: 90px;
@@ -517,6 +513,12 @@ header {
 	opacity: 0.5;
 }
 /* Cột mốc đáng nhớ */
+
+.milestones-item{
+	min-height: 199px;
+}
+
+
 .milestones {
 	margin-top: 78px;
 	position: relative;
@@ -598,8 +600,9 @@ header {
 	color: #737373;
 }
 .milestones .slick-initialized .slick-slide {
-	margin: 0 35px;
+	margin: 50px 48px;
 }
+
 .milestones .draggable {
 	padding: 34px 0 52px;
 }
@@ -915,7 +918,7 @@ footer::after {
 .member-list {
 	display: flex;
 	max-width: 1441px;
-	margin: 50px auto;
+	margin: 33px auto;
 }
 .member-item {
 	position: relative;
@@ -1163,7 +1166,7 @@ footer::after {
 		display: flex;
 		align-items: center;
 		gap: 4px;
-		padding: 8px 14px 8px 17px;
+		padding: 6px 14px 6px 17px;
 		background: #ffffff;
 		/* Gray/200 */
 

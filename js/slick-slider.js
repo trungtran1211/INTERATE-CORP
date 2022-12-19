@@ -1,3 +1,4 @@
+// những cột mốc đáng nhớ
 $(document).ready(function () {
 	$(".milestones-list").slick({
 		slidesToShow: 3,
@@ -6,6 +7,7 @@ $(document).ready(function () {
 		dots: true,
 		autoplay: false,
 		centerMode: true,
+  		centerPadding: '0px',
 		responsive: [
 			{
 				breakpoint: 769,
@@ -27,6 +29,7 @@ $(".banner-list").slick({
 	cssEase: "linear",
 	autoplay: true,
 });
+
 const mediaQuery = window.matchMedia('(max-width: 600px)')
 if (mediaQuery.matches) {
 	$(".newevent-list").slick({
@@ -53,6 +56,8 @@ const iconclose = document.querySelector(".iconclose");
 const menuItem = document.querySelectorAll(".list-menumb .menu-item");
 const body = document.querySelector(".close1");
 
+
+
 iconmenu.addEventListener("click", () => {
 	menu.classList.toggle("open");
 	iconmenu.classList.toggle("close");
@@ -65,10 +70,25 @@ iconclose.addEventListener("click", () => {
 	iconclose.classList.toggle("active");
 });
 
+
+// Show hide Search
+
+const searchbtn = document.querySelector(".search-btn");
+const search = document.querySelector(".search");
+const hide = document.querySelector(".hide");
+
+searchbtn.addEventListener("click", () => {
+	search.classList.toggle("search-bd");
+	hide.classList.toggle("show");
+});
+
+
 body.addEventListener("click", () => {
 	menu.classList.remove("open");
 	iconmenu.classList.remove("close");
 	iconclose.classList.remove("active");
+	search.classList.remove("search-bd");
+	hide.classList.remove("show");
 	}
 )
 
@@ -127,3 +147,5 @@ $(".banner-list").on(
 		});
 	}
 );
+
+
