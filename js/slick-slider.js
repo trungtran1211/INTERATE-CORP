@@ -106,9 +106,9 @@ menuItem.forEach(item => {
 let topBtn = document.querySelector(".scroll");
 
 // On Click, Scroll to the page's top, replace 'smooth' with 'auto' if you don't want smooth scrolling
-topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+topBtn.onclick = () => window.scrollTo({ top: 0 });
 
-// On scroll, Show/Hide the btn with animation
+// On scroll, Show/Hide the btn with animation , ///////behavior: "smooth"
 window.onscroll = () =>
 	window.scrollY > 400
 		? (topBtn.style.opacity = 1)

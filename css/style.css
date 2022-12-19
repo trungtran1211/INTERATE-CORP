@@ -6,7 +6,6 @@
 }
 html,
 body {
-	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
 img {
@@ -1510,7 +1509,7 @@ footer::after {
 		position: relative;
 	}
 	.member-list {
-		margin: 8px auto 20px;
+		margin: 13px auto 20px;
 	}
 	.member-item {
 		margin-bottom: 3px;
@@ -1599,7 +1598,7 @@ footer::after {
 		margin-bottom: 8px;
 	}
 	.about-left span::after {
-		content: url(../images/arrow-hdmb1.png);
+		content: url(../images/arrow-hdmb2.png);
 		position: absolute;
 		top: -10px;
 	}
