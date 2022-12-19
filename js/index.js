@@ -10,9 +10,17 @@
 $(".member-item").hover(
 	function () {
 		$(".member-item").not(this).addClass("w-0");
+		$(".member-item")
+			.not(this)
+			.find(".member-item-content")
+			.addClass("none");
 	},
 	function () {
 		$(".member-item").not(this).removeClass("w-0");
 		$(".member-item").not(this).addClass("w-100");
+		$(".member-item")
+			.not(this)
+			.find(".member-item-content")
+			.removeClass("none");
 	}
 );

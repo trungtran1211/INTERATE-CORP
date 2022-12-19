@@ -5,6 +5,7 @@ $(document).ready(function () {
 		arrows: false,
 		dots: true,
 		autoplay: false,
+		centerMode: true,
 		responsive: [
 			{
 				breakpoint: 769,
@@ -21,27 +22,30 @@ $(".banner-list").slick({
 	infinite: true,
 	arrows: false,
 	speed: 500,
-	autoplaySpeed: 800,
+	autoplaySpeed: 1200,
 	fade: true,
 	cssEase: "linear",
 	autoplay: true,
 });
-
-$(".newevent-list").slick({
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	autoplay: true,
-	autoplaySpeed: 2000,
-	arrows: false,
-	responsive: [
-		{
-			breakpoint: 769,
-			settings: {
-				slidesToShow: 1,
+const mediaQuery = window.matchMedia('(max-width: 600px)')
+if (mediaQuery.matches) {
+	$(".newevent-list").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1,
+				},
 			},
-		},
-	],
-});
+		],
+	});
+	
+}
 
 const menu = document.querySelector(".list-menumb");
 const iconmenu = document.querySelector(".iconmenu");
@@ -105,3 +109,21 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 		scrollTop: $($.attr(this, 'href')).offset().top - 150
 	});
 });
+
+
+// dừng video khi chuyển slide
+
+var MyPlayButton = null;
+
+$(".banner-list").on(
+	"beforeChange",
+	function (event, slick, currentSlide, nextSlide) {
+		if (null !== MyPlayButton) {
+			MyPlayButton.off("click");
+		}
+
+		$("video").each(function () {
+			$(this).get(0).pause();
+		});
+	}
+);
