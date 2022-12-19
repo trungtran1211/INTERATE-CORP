@@ -27,7 +27,7 @@ $(".banner-list").slick({
 	autoplaySpeed: 1200,
 	fade: true,
 	cssEase: "linear",
-	autoplay: false,
+	autoplay: true,
 });
 
 const mediaQuery = window.matchMedia('(max-width: 600px)')
