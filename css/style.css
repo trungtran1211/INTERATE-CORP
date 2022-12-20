@@ -760,7 +760,7 @@ video {
 	color: #ec1d25;
 	margin-bottom: 7px;
 }
-.newevent-item p a {
+.newevent-item p {
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
@@ -1732,7 +1732,7 @@ footer::after {
 		text-align: center;
 	}
 	.vision-right {
-		max-width: 350px;
+		max-width: 340px;
 	}
 	.vision-left {
 		width: 100%;
